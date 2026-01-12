@@ -10,8 +10,12 @@ import GetStarted from './Pages/GetStarted/GetStarted'
 import HowtoUse from './Pages/HowtoUse/HowtoUse'
 import ContactUs from './Pages/ContactUs/ContactUs'
 import Feedback from './Pages/Feedback/Feedback'
-import Login from './Pages/Login/Login'
-import SignUp from './Pages/SignUp/SignUp'
+import StartPage from './Pages/StartPage/StartPage'
+import LoginPage from './Pages/LoginPage/LoginPage'
+import NewLoginPage from './Pages/NewLoginPage/NewLoginPage'
+import SelectPage from './Pages/SelectPage/SelectPage'
+import HR from './Pages/HR/HR'
+import Tech from './Pages/Tech/Tech'
 
 const App = () => {
   return (
@@ -26,8 +30,12 @@ const App = () => {
         <Route path="/howToUse" element={<HowtoUse />} />
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/feedback" element={<Feedback />} />
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/signup" element={<SignUp/>} />
+        <Route path="/startpage" element={<StartPage/>}/>
+        <Route path="/loginpage" element={<LoginPage/>}/>
+        <Route path="/newloginpage" element={<NewLoginPage/>}/>
+        <Route path="/selectpage" element={<SelectPage/>}/>
+        <Route path="/hr" element={<HR/>}/>
+        <Route path="/tech" element={<Tech/>}/>
       </Routes>
       <Footer />
     </>

@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "../../Components/Button";
+import { useNavigate } from "react-router-dom";
+import LoginPage from "../LoginPage/LoginPage";
 
 export default function GetStarted() {
+  const nav = useNavigate();
   const [showSignupBox, setShowSignupBox] = useState(false);
 
   const boxVariants = {
@@ -42,19 +45,7 @@ export default function GetStarted() {
                   boxShadow: "0 25px 50px -12px rgba(0,0,0,0.25)"
                 }}
               >
-                <h1 className="text-2xl font-bold mb-6 text-blue-600 text-center">
-                  Login to Your Account
-                </h1>
-                <input
-                  className="w-full mb-4 px-4 py-2 border rounded outline-none"
-                  placeholder="Email"
-                />
-                <input
-                  className="w-full mb-6 px-4 py-2 border rounded outline-none"
-                  type="password"
-                  placeholder="Password"
-                />
-                <Button text="Login" />
+                <LoginPage/>
               </div>
 
               {/* Right: Sign Up Button */}
@@ -113,7 +104,7 @@ export default function GetStarted() {
                   type="password"
                   placeholder="Confirm Password"
                 />
-                <Button text="Sign Up" />
+                <Button text="Sign Up" onClick={() => nav('/NewLoginPage')}/>
               </div>
             </motion.div>
           )}
