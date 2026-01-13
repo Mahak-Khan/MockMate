@@ -15,7 +15,7 @@ const SelectPage = () => {
     <div className="flex flex-col items-center justify-center gap-1 mt-2">
 
       {/* HR Section */}
-      <div className="flex flex-row pl-60 items-center">
+      <div className="flex flex-row pl-90 items-center">
         <div className={cardClass}>
           <p className="mb-4 text-black">
             HR questions focus on your personality, communication skills, work ethic,
@@ -35,7 +35,7 @@ const SelectPage = () => {
       </div>
 
       {/* Technical Section */}
-      <div className="flex flex-row items-center pl-60">
+      <div className="flex flex-row items-center pl-90">
         <div>
           <img
             src={Techquest}

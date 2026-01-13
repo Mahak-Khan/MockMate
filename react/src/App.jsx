@@ -16,6 +16,7 @@ import NewLoginPage from './Pages/NewLoginPage/NewLoginPage'
 import SelectPage from './Pages/SelectPage/SelectPage'
 import HR from './Pages/HR/HR'
 import Tech from './Pages/Tech/Tech'
+import AnswerReview from './Components/AnswerReview'
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/selectpage" element={<SelectPage/>}/>
         <Route path="/hr" element={<HR/>}/>
         <Route path="/tech" element={<Tech/>}/>
+        <Route path="/answerreview" element={<AnswerReview/>}/>
       </Routes>
       <Footer />
     </>
