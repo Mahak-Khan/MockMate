@@ -1,0 +1,10 @@
+{
+  "name": "mockmate",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run dev --prefix react/backend\" \"npm start --prefix react\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
