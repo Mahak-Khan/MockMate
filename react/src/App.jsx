@@ -17,6 +17,8 @@ import SelectPage from './Pages/SelectPage/SelectPage'
 import HR from './Pages/HR/HR'
 import Tech from './Pages/Tech/Tech'
 import AnswerReview from './Components/AnswerReview'
+import Profile from './Pages/Profile/Profile'
+import Progress from './Pages/Progress/Progress'
 
 const App = () => {
   return (
@@ -38,6 +40,8 @@ const App = () => {
         <Route path="/hr" element={<HR/>}/>
         <Route path="/tech" element={<Tech/>}/>
         <Route path="/answerreview" element={<AnswerReview/>}/>
+        <Route path="/profile" element={<Profile/>}/>
+        <Route path="/progress" element={<Progress/>}/>
       </Routes>
       <Footer />
     </>

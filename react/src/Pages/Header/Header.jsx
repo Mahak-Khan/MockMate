@@ -1,10 +1,12 @@
 import React from 'react'
 import { MdMenu } from "react-icons/md";
 import { VscAccount } from "react-icons/vsc";
-import { RxSwitch } from "react-icons/rx";
+import { FaHistory } from "react-icons/fa";
 import { LuBrainCircuit } from "react-icons/lu";
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
+    const nav = useNavigate()
     return (
         <header className='
         bg-white/40 backdrop-blur-xl backdrop-saturate-150
@@ -26,10 +28,10 @@ const Header = () => {
                 </button>
 
                 <button className='cursor-pointer hover:scale-105 transition-transform'>
-                    <RxSwitch size={45} />
+                    <FaHistory size={40} onClick={() => nav('/progress')} />
                 </button>
 
-                <button className='cursor-pointer hover:scale-105 transition-transform'>
+                <button className='cursor-pointer hover:scale-105 transition-transform' onClick={() => nav('/profile')}>
                     <VscAccount size={45} />
                 </button>
             </div>
