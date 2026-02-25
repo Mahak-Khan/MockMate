@@ -14,7 +14,7 @@ const Header = () => {
         h-16 flex flex-row gap-2 rounded-full mt-5 mr-5 ml-5
         '>
             <h1 className='text-black text-4xl pl-6 pt-2.5 font-bold flex gap-2'>
-                MockMate <LuBrainCircuit className='mt-1'/>
+                MockMate <LuBrainCircuit className='mt-1 hover:text-blue-500 animate-pulse'/>
             </h1>
 
             <div className='flex flex-row gap-5 ml-auto mr-6'>
